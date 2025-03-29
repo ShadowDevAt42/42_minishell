@@ -1,0 +1,27 @@
+# Executables
+minishell
+
+# Object files
+*.o
+objs/
+
+# Libraries
+*.a
+*.so
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+.vscode/
+.idea/
+.cursor/
+
+# macOS specific files
+.DS_Store
+
+# Text editor temp/swap files
+*.swp
+*~
+.*.swp 
