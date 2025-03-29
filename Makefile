@@ -6,7 +6,7 @@
 #    By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 02:35:00 by minishell         #+#    #+#              #
-#    Updated: 2025/03/29 02:45:36 by fdi-tria         ###   ########.fr        #
+#    Updated: 2025/03/29 19:13:57 by fdi-tria         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,8 +46,6 @@ SRCS =	$(SRCS_DIR)main.c \
 		$(BUILTINS_DIR)exit.c \
 		$(SIGNALS_DIR)signals.c \
 		$(UTILS_DIR)errors.c \
-		$(UTILS_DIR)memory.c \
-		$(UTILS_DIR)strings.c \
 		$(UTILS_DIR)env_utils.c
 
 # Objets
