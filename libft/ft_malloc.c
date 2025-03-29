@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 05:10:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:46:50 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:26:49 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,4 @@ void	*ft_malloc(size_t size)
 		exit(EXIT_FAILURE);
 	}
 	return (ptr);
-} 
+}

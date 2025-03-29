@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 02:40:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:32:03 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:20:27 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,4 +113,4 @@ int	main(int argc, char **argv, char **env)
 	}
 	free_shell(&shell);
 	return (shell.exit_status);
-} 
+}

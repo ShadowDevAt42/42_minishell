@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 06:05:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:45:19 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:27:03 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,4 @@ void	*ft_calloc(size_t count, size_t size)
 		return (NULL);
 	ft_bzero(ptr, total_size);
 	return (ptr);
-} 
+}

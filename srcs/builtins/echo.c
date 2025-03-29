@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:15:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:40:55 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:24:51 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,4 @@ int	ft_echo(t_cmd *cmd)
 	if (!n_option)
 		printf("\n");
 	return (SUCCESS);
-} 
+}

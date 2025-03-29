@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 05:55:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:44:59 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:27:12 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,4 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (result * sign);
-} 
+}

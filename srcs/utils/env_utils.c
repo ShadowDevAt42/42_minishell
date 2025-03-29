@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 06:10:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:46:20 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:21:48 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,4 +144,4 @@ int	remove_env_var(char ***env, char *key)
 	free(*env);
 	*env = new_env;
 	return (SUCCESS);
-} 
+}

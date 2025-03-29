@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 06:15:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:46:30 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:20:51 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,4 @@ void	print_error(char *cmd, char *msg)
 		fprintf(stderr, "minishell: %s: %s\n", cmd, msg);
 	else
 		fprintf(stderr, "minishell: %s\n", msg);
-} 
+}

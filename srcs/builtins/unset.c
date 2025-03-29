@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:35:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:34:39 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:25:42 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	is_valid_name(char *name)
 {
 	int	i;
 
-	if (!name || !name[0] || !(name[0] == '_' 
+	if (!name || !name[0] || !(name[0] == '_'
 			|| (name[0] >= 'a' && name[0] <= 'z')
 			|| (name[0] >= 'A' && name[0] <= 'Z')))
 		return (0);
@@ -59,4 +59,4 @@ int	ft_unset(t_cmd *cmd, t_shell *shell)
 		i++;
 	}
 	return (status);
-} 
+}

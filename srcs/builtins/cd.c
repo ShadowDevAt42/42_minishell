@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:20:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:33:58 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:24:56 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,4 +84,4 @@ int	ft_cd(t_cmd *cmd, t_shell *shell)
 	else
 		path = cmd->args[1];
 	return (change_directory(shell, path));
-} 
+}

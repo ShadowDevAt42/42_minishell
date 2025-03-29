@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:45:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:48:37 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:24:42 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,4 @@ int	ft_exit(t_cmd *cmd, t_shell *shell)
 	shell->running = 0;
 	shell->exit_status = status;
 	return (SUCCESS);
-} 
+}

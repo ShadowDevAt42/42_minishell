@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 04:25:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:37:51 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:24:11 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,4 +110,4 @@ int	handle_redirections(t_cmd *cmd)
 		redir = redir->next;
 	}
 	return (SUCCESS);
-} 
+}

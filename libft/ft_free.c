@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 05:15:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:43:09 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:26:55 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,4 @@ void	ft_free(void *ptr)
 		free(ptr);
 		ptr = NULL;
 	}
-} 
+}

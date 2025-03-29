@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 04:30:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:38:01 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:24:15 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,4 @@ int	setup_pipes(t_cmd *cmd, t_cmd *next)
 	cmd->pipe_out = pipefd[1];
 	next->pipe_in = pipefd[0];
 	return (SUCCESS);
-} 
+}

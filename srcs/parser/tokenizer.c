@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:50:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:35:26 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:21:58 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,4 +152,4 @@ t_token	*tokenizer(char *input)
 		}
 	}
 	return (tokens);
-} 
+}

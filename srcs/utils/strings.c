@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 02:50:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:32:33 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:20:31 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,4 +109,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	result[len1 + i] = '\0';
 	return (result);
-} 
+}

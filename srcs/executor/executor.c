@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 04:15:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:47:53 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:24:23 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,4 +96,4 @@ int	executor(t_shell *shell)
 	else
 		status = execute_pipeline(cmds, shell);
 	return (status);
-} 
+}

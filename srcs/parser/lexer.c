@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 04:05:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:36:26 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:24:00 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,4 @@ int	lexer_analyze(t_token *tokens, t_shell *shell)
 		current = current->next;
 	}
 	return (SUCCESS);
-} 
+}

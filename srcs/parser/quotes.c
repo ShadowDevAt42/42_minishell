@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:55:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:40:24 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:22:11 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,4 @@ int	handle_quotes(char *input, int *i, char **value)
 	else if (input[*i] == '\"')
 		return (handle_double_quotes(input, i, value));
 	return (ERROR);
-} 
+}

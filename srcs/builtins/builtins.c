@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:10:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:40:55 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:25:02 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,4 @@ int	execute_builtin(t_cmd *cmd, t_shell *shell)
 	else if (!ft_strcmp(cmd->args[0], "exit"))
 		return (ft_exit(cmd, shell));
 	return (ERROR);
-} 
+}

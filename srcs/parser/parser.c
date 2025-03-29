@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 04:10:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:36:53 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/29 03:23:56 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -207,4 +207,4 @@ t_cmd	*parser(t_token *tokens, t_shell *shell)
 	}
 	current_cmd->args[arg_index] = NULL;
 	return (cmds);
-} 
+}
