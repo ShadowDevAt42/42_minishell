@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 02:32:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 02:46:50 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/31 23:53:57 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,6 +119,7 @@ void		handle_sigquit(int sig);
 /* Fonctions utilitaires */
 void		print_error(char *cmd, char *msg);
 char		**copy_env(char **env);
+void		free_array(char **array);
 char		*get_env_value(char **env, char *key);
 int			set_env_value(char ***env, char *key, char *value);
 int			remove_env_var(char ***env, char *key);

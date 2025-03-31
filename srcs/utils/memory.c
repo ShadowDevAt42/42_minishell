@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/29 02:45:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 19:09:52 by fdi-tria         ###   ########.fr       */
+/*   Created: 2025/03/29 20:00:00 by fdi-tria         #+#    #+#             */
+/*   Updated: 2025/03/29 20:00:00 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,4 +61,48 @@ char	*ft_strdup(const char *s)
 	}
 	dup[i] = '\0';
 	return (dup);
+}
+
+/**
+ * Libère un tableau de chaînes de caractères
+ */
+void	free_array(char **array)
+{
+	int	i;
+
+	if (!array)
+		return ;
+	i = 0;
+	while (array[i])
+	{
+		free(array[i]);
+		array[i] = NULL;
+		i++;
+	}
+	free(array);
+}
+
+/**
+ * Duplique un tableau de chaînes de caractères
+ */
+char	**copy_env(char **env)
+{
+	char	**new_env;
+	int		i;
+	int		size;
+
+	if (!env)
+		return (NULL);
+	size = 0;
+	while (env[size])
+		size++;
+	new_env = (char **)ft_malloc(sizeof(char *) * (size + 1));
+	new_env[size] = NULL;
+	i = 0;
+	while (i < size)
+	{
+		new_env[i] = ft_strdup(env[i]);
+		i++;
+	}
+	return (new_env);
 }

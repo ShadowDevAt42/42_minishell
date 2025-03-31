@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 02:40:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 19:09:55 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/31 23:54:13 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ static void	free_shell(t_shell *shell)
 			i++;
 		}
 		free(shell->env);
+		shell->env = NULL;
 	}
 }
 

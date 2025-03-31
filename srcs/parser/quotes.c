@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 03:55:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 19:09:42 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/31 23:53:57 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ static int	handle_single_quotes(char *input, int *i, char **value)
 		return (ERROR);
 	}
 	*value = (char *)ft_malloc(sizeof(char) * (len + 1));
+	if (!*value)
+		return (ERROR);
 	(*value)[len] = '\0';
 	j = 0;
 	(*i)++;
@@ -70,6 +72,8 @@ static int	handle_double_quotes(char *input, int *i, char **value)
 		return (ERROR);
 	}
 	*value = (char *)ft_malloc(sizeof(char) * (len + 1));
+	if (!*value)
+		return (ERROR);
 	(*value)[len] = '\0';
 	j = 0;
 	(*i)++;

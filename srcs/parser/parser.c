@@ -6,7 +6,7 @@
 /*   By: fdi-tria <fdi-tria@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 04:10:00 by minishell         #+#    #+#             */
-/*   Updated: 2025/03/29 19:09:40 by fdi-tria         ###   ########.fr       */
+/*   Updated: 2025/03/31 23:53:57 by fdi-tria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,12 +95,21 @@ static int	count_args(t_token *tokens)
 	current = tokens;
 	while (current && current->type != T_PIPE)
 	{
-		if (current->type == T_WORD
-			&& (!current->next || current->next->type != T_WORD))
+		if (current->type == T_WORD)
+		{
 			count++;
+			if (current->next && (current->next->type == T_REDIR_IN 
+				|| current->next->type == T_REDIR_OUT
+				|| current->next->type == T_REDIR_APPEND 
+				|| current->next->type == T_HEREDOC))
+				count--;
+		}
 		else if (current->type == T_REDIR_IN || current->type == T_REDIR_OUT
 			|| current->type == T_REDIR_APPEND || current->type == T_HEREDOC)
-			current = current->next;
+		{
+			if (current->next)
+				current = current->next;
+		}
 		current = current->next;
 	}
 	return (count);
